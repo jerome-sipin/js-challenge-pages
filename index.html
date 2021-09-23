@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset">
+              <!-- Python code that was used to make the following html code can be found in 
+              'loop to create code for dropdown options.ipynb' -->
+              <option value="0">940</option>
+              <option value="1">941</option>
+              <option value="2">943</option>
+              <option value="3">944</option>
+              <option value="4">945</option>
+              <option value="5">946</option>
+              <option value="6">947</option>
+              <option value="7">948</option>
+              <option value="8">949</option>
+              <option value="9">950</option>
+              <option value="10">952</option>
+              <option value="11">953</option>
+              <option value="12">954</option>
+              <option value="13">955</option>
+              <option value="14">956</option>
+              <option value="15">958</option>
+              <option value="16">959</option>
+              <option value="17">960</option>
+              <option value="18">961</option>
+              <option value="19">962</option>
+              <option value="20">963</option>
+              <option value="21">964</option>
+              <option value="22">966</option>
+              <option value="23">967</option>
+              <option value="24">968</option>
+              <option value="25">969</option>
+              <option value="26">970</option>
+              <option value="27">971</option>
+              <option value="28">972</option>
+              <option value="29">973</option>
+              <option value="30">974</option>
+              <option value="31">975</option>
+              <option value="32">978</option>
+              <option value="33">1233</option>
+              <option value="34">1234</option>
+              <option value="35">1235</option>
+              <option value="36">1236</option>
+              <option value="37">1237</option>
+              <option value="38">1238</option>
+              <option value="39">1242</option>
+              <option value="40">1243</option>
+              <option value="41">1246</option>
+              <option value="42">1253</option>
+              <option value="43">1254</option>
+              <option value="44">1258</option>
+              <option value="45">1259</option>
+              <option value="46">1260</option>
+              <option value="47">1264</option>
+              <option value="48">1265</option>
+              <option value="49">1273</option>
+              <option value="50">1275</option>
+              <option value="51">1276</option>
+              <option value="52">1277</option>
+              <option value="53">1278</option>
+              <option value="54">1279</option>
+              <option value="55">1280</option>
+              <option value="56">1281</option>
+              <option value="57">1282</option>
+              <option value="58">1283</option>
+              <option value="59">1284</option>
+              <option value="60">1285</option>
+              <option value="61">1286</option>
+              <option value="62">1287</option>
+              <option value="63">1288</option>
+              <option value="64">1289</option>
+              <option value="65">1290</option>
+              <option value="66">1291</option>
+              <option value="67">1292</option>
+              <option value="68">1293</option>
+              <option value="69">1294</option>
+              <option value="70">1295</option>
+              <option value="71">1296</option>
+              <option value="72">1297</option>
+              <option value="73">1298</option>
+              <option value="74">1308</option>
+              <option value="75">1309</option>
+              <option value="76">1310</option>
+              <option value="77">1374</option>
+              <option value="78">1415</option>
+              <option value="79">1439</option>
+              <option value="80">1441</option>
+              <option value="81">1443</option>
+              <option value="82">1486</option>
+              <option value="83">1487</option>
+              <option value="84">1489</option>
+              <option value="85">1490</option>
+              <option value="86">1491</option>
+              <option value="87">1494</option>
+              <option value="88">1495</option>
+              <option value="89">1497</option>
+              <option value="90">1499</option>
+              <option value="91">1500</option>
+              <option value="92">1501</option>
+              <option value="93">1502</option>
+              <option value="94">1503</option>
+              <option value="95">1504</option>
+              <option value="96">1505</option>
+              <option value="97">1506</option>
+              <option value="98">1507</option>
+              <option value="99">1508</option>
+              <option value="100">1510</option>
+              <option value="101">1511</option>
+              <option value="102">1512</option>
+              <option value="103">1513</option>
+              <option value="104">1514</option>
+              <option value="105">1515</option>
+              <option value="106">1516</option>
+              <option value="107">1517</option>
+              <option value="108">1518</option>
+              <option value="109">1519</option>
+              <option value="110">1521</option>
+              <option value="111">1524</option>
+              <option value="112">1526</option>
+              <option value="113">1527</option>
+              <option value="114">1530</option>
+              <option value="115">1531</option>
+              <option value="116">1532</option>
+              <option value="117">1533</option>
+              <option value="118">1534</option>
+              <option value="119">1535</option>
+              <option value="120">1536</option>
+              <option value="121">1537</option>
+              <option value="122">1539</option>
+              <option value="123">1540</option>
+              <option value="124">1541</option>
+              <option value="125">1542</option>
+              <option value="126">1543</option>
+              <option value="127">1544</option>
+              <option value="128">1545</option>
+              <option value="129">1546</option>
+              <option value="130">1547</option>
+              <option value="131">1548</option>
+              <option value="132">1549</option>
+              <option value="133">1550</option>
+              <option value="134">1551</option>
+              <option value="135">1552</option>
+              <option value="136">1553</option>
+              <option value="137">1554</option>
+              <option value="138">1555</option>
+              <option value="139">1556</option>
+              <option value="140">1557</option>
+              <option value="141">1558</option>
+              <option value="142">1561</option>
+              <option value="143">1562</option>
+              <option value="144">1563</option>
+              <option value="145">1564</option>
+              <option value="146">1572</option>
+              <option value="147">1573</option>
+              <option value="148">1574</option>
+              <option value="149">1576</option>
+              <option value="150">1577</option>
+              <option value="151">1581</option>
+              <option value="152">1601</option>
+          </select>
+        </div>
+        <div class="panel panel-primary" style="width: 300;">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body">
+            <div id='id'>id:</div>
+            <div id='ethnicity'>ethnicity:</div>
+            <div id='gender'>gender:</div>
+            <div id='age'>age:</div>
+            <div id='location'>location:</div>
+            <div id='bbtype'>bbtype:</div>
+            <div id='wfreq'>wfreq:</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+
+</body>
+
+</html>
